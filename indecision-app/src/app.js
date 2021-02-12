@@ -4,21 +4,21 @@
 const app = {
     title: 'Indecision App',
     subtitle: 'an app',
-    options: ['one','two']
+    options: []
 };
 
-const template = (
-    <div>
-        <h1>{app.title}</h1>
-        {app.subtitle ? <p>{app.subtitle}</p> : undefined}
-        {app.options.length>0 ? <p>Here are your options</p> : <p>No options</p>}
-        <ol>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ol>
-    </div>
-    );
+const onFormSubmit = (e) => {
+    e.preventDefault();
+
+    const option = e.target.option.value;
+
+    if (option) {
+        app.options.push(option);
+        e.target.option.value = '';
+    }
+
+    render();
+}
 
 const user = {
     name: 'Shaun',
@@ -32,14 +32,46 @@ const getLocation = (location) => {
     
 }
 
-const templateTwo = (
-    <div>
-        <h1>{user.name ? user.name : 'Anonymous'}</h1>
-        {user.age >= 18 && <p>Age: {user.age}</p>}
-        {getLocation(user.location)}
-    </div>
-);
+const onRemoveAll = () => {
+    app.options = [];
+    render();
+}
+
+const onMakeDecision = () => {
+    const randomNum = Math.floor(Math.random() * app.options.length);
+    const option = app.options[randomNum];
+    alert(option);
+    console.log(randomNum)
+    render();
+}
 
 const appRoot = document.querySelector('#app');
 
-ReactDOM.render(template, appRoot);
+const numbers = [55,23,64,79];
+
+const render = () => {
+    const template = (
+        <div>
+            <h1>{app.title}</h1>
+            {app.subtitle ? <p>{app.subtitle}</p> : undefined}
+            {app.options.length>0 ? <p>Here are your options</p> : <p>No options</p>}
+            <p>{app.options.length}</p>
+            <button disabled={app.options.length === 1} onClick={onMakeDecision}>What should I do?</button>
+            <button onClick={onRemoveAll}>remove</button>
+            <ol>
+                {app.options.map((option)=> {
+                    return <li key={option}>{option}</li>
+                })
+                }
+            </ol>
+    
+            <form onSubmit={onFormSubmit}>
+                <input type="text" name="option"/>
+                <button>Add Option</button>
+            </form>
+        </div>
+        );
+        ReactDOM.render(template, appRoot);
+}
+
+render();

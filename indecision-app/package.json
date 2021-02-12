@@ -9,7 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "babel src/app.js -o public/scripts/app.js --presets=env,react --watch"
+    "build": "babel src/playground/build-it-visible.js -o public/scripts/app.js --presets=env,react --watch"
   },
   "author": "",
   "license": "ISC"

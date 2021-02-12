@@ -17,3 +17,6 @@ Learn how to build and launch React web applications using React, Redux, Webpack
 - Arrow functions 
 - ES6 method syntax 
 - Working with .map (returns a new array with some manipulation applied to each element through the return function)
+- eventHandlers
+- Arrays in JSX
+- challenge: built a visibility toggle
