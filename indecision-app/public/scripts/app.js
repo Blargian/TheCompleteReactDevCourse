@@ -4,7 +4,8 @@
 
 var app = {
     title: 'Indecision App',
-    subtitle: 'an app'
+    subtitle: 'an app',
+    options: ['one', 'two']
 };
 
 var template = React.createElement(
@@ -15,10 +16,19 @@ var template = React.createElement(
         null,
         app.title
     ),
-    React.createElement(
+    app.subtitle ? React.createElement(
         'p',
         null,
         app.subtitle
+    ) : undefined,
+    app.options.length > 0 ? React.createElement(
+        'p',
+        null,
+        'Here are your options'
+    ) : React.createElement(
+        'p',
+        null,
+        'No options'
     ),
     React.createElement(
         'ol',
@@ -41,9 +51,21 @@ var template = React.createElement(
     )
 );
 
-var userName = 'Shaun';
-var age = 26;
-var locationPlace = 'South Africa';
+var user = {
+    name: 'Shaun',
+    age: 12,
+    location: 'South Africa'
+};
+
+var getLocation = function getLocation(location) {
+
+    return location ? React.createElement(
+        'p',
+        null,
+        'Location: ',
+        location
+    ) : undefined;
+};
 
 var templateTwo = React.createElement(
     'div',
@@ -51,20 +73,15 @@ var templateTwo = React.createElement(
     React.createElement(
         'h1',
         null,
-        userName
+        user.name ? user.name : 'Anonymous'
     ),
-    React.createElement(
+    user.age >= 18 && React.createElement(
         'p',
         null,
         'Age: ',
-        age
+        user.age
     ),
-    React.createElement(
-        'p',
-        null,
-        'place: ',
-        locationPlace
-    )
+    getLocation(user.location)
 );
 
 var appRoot = document.querySelector('#app');
