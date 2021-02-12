@@ -20,3 +20,18 @@ Learn how to build and launch React web applications using React, Redux, Webpack
 - eventHandlers
 - Arrays in JSX
 - challenge: built a visibility toggle
+
+## Section 4 - React Components
+
+### What did I learn? 
+
+- Component thinking in React (reusability)
+- ES6 classes, constructors default arguments,
+- Class inheritance and using super() in the constructor
+- How to make a React class with extends React.Component
+- Add a render () method to every component 
+- Passing data using props
+- Adding event handlers using props and handler functions
+- using .bind() to set the this context to that of the object passed into .bind()
+- A better way to do that is to call the constructor (props) { super (props); } within the class
+- The setState method
