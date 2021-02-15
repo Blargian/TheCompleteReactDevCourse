@@ -49,3 +49,15 @@ Learn how to build and launch React web applications using React, Redux, Webpack
     - componentDidMount
     - componentDidUpdate
     - componentWillUnmount
+
+## Section 6 - Webpack
+
+### What did I learn? 
+
+- Webpack is an asset bundler 
+- Setting up webpack
+- Named and default exports
+- Webpack loaders
+- Configuring webpack with babel 
+- Configuring Source mapping
+- Transform class properties syntax and how to add it to webpack
