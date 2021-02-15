@@ -68,3 +68,13 @@ Learn how to build and launch React web applications using React, Redux, Webpack
 
 - Children prop (props.children)
 - Using third party components (eg React modal)
+
+## Section 8 - Styling React
+
+### What did I learn? 
+
+- Setting up webpack to use SCSS
+- scss partials and imports
+- BEM naming convention
+- The importance of resetting (eg - normalise.css)
+- Styled the indecision app
