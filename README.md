@@ -35,3 +35,17 @@ Learn how to build and launch React web applications using React, Redux, Webpack
 - using .bind() to set the this context to that of the object passed into .bind()
 - A better way to do that is to call the constructor (props) { super (props); } within the class
 - The setState method
+
+## Section 5 - Stateless Functional Components
+
+### What did I learn? 
+
+- We can make functional stateless components which take in props and return JSX (no render method)
+- Default prop values
+- Using the React developer tools
+- Short hand set state:
+    - this.setState(() => ({options: []}))
+- Lifecycle methods
+    - componentDidMount
+    - componentDidUpdate
+    - componentWillUnmount
