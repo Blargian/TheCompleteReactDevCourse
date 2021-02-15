@@ -61,3 +61,10 @@ Learn how to build and launch React web applications using React, Redux, Webpack
 - Configuring webpack with babel 
 - Configuring Source mapping
 - Transform class properties syntax and how to add it to webpack
+
+## Section 7 - Using a third-party component
+
+### What did I learn? 
+
+- Children prop (props.children)
+- Using third party components (eg React modal)
