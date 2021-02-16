@@ -78,3 +78,12 @@ Learn how to build and launch React web applications using React, Redux, Webpack
 - BEM naming convention
 - The importance of resetting (eg - normalise.css)
 - Styled the indecision app
+
+## Section 9 - React Router
+
+### What did I learn? 
+
+- Server vs Client side routing 
+- What is React Router + setup
+- BrowserRouter, Switch, Link and NavLink components
+- 
