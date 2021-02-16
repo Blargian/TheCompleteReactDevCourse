@@ -86,4 +86,19 @@ Learn how to build and launch React web applications using React, Redux, Webpack
 - Server vs Client side routing 
 - What is React Router + setup
 - BrowserRouter, Switch, Link and NavLink components
-- 
+
+## Section 10 - Redux
+
+### What did I learn? 
+
+- Short comings of built-in state management 
+- Setting up Redux 
+- Store and actions
+- Subscribing to the store and dynamic actions
+- How to destructure objects
+- How to destructure arrays
+- Reducers are pure functions that take a previousState, action and return a new state
+- Using combineReducers() function and passing that to createStore()
+- Using spread operators in reducers
+- Setting up object spread with babel 
+- Implementing actions, reducers and store + filtering on the expensify app
