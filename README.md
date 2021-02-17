@@ -102,3 +102,13 @@ Learn how to build and launch React web applications using React, Redux, Webpack
 - Using spread operators in reducers
 - Setting up object spread with babel 
 - Implementing actions, reducers and store + filtering on the expensify app
+
+## Section 11 - React with Redux 
+
+### What did I learn? 
+
+- Set up Redux with the expensify app
+- Higher order components and why we might want to use them 
+- Installing react-redux and using the Provider component
+- Using the connect component 
+- Implemented expensify app in redux 
