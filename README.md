@@ -103,7 +103,7 @@ Learn how to build and launch React web applications using React, Redux, Webpack
 - Setting up object spread with babel 
 - Implementing actions, reducers and store + filtering on the expensify app
 
-## Section 11 - React with Redux 
+## Section 11 - React With Redux 
 
 ### What did I learn? 
 
@@ -112,3 +112,13 @@ Learn how to build and launch React web applications using React, Redux, Webpack
 - Installing react-redux and using the Provider component
 - Using the connect component 
 - Implemented expensify app in redux 
+
+## Section 12 - Testing Your Application
+
+### What did I learn? 
+
+- How to install and setup Jest 
+- Jest globals like test() and expect() and how to write basic tests
+- expect.any() for testing things like uuid [just checking by type]
+- Wrote tests for actions, selectors and reducers
+- fixtures are dummy data/test data
