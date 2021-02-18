@@ -122,3 +122,17 @@ Learn how to build and launch React web applications using React, Redux, Webpack
 - expect.any() for testing things like uuid [just checking by type]
 - Wrote tests for actions, selectors and reducers
 - fixtures are dummy data/test data
+- Snapshot testing with react-test-renderer
+- Enzyme and using snapshot 
+- Wrote snapshot tests for the expensify app components
+- Creating mock libraries
+- Enzyme simulate to simulate events
+    - wrapper.simulate
+    - wrapper.state
+- Test spies (mocked functions)
+    - create a spy with jest.fn();
+    - expect(mySpy).toHaveBeenCalled();
+- MapDispatchToProps in redux for easier dispatch testing 
+- beforeEachMethod in Jest
+
+This section was a little tough. I can really see the value of testing though, especially as an app gets bigger and the state gets more complex. This was a good introduction to testing with Jest. 
