@@ -16,7 +16,6 @@ store.dispatch(addExpense({description:'Water bill',note:'starbucks flat white',
 store.dispatch(addExpense({description:'Electricity bill',note:'ESKOM eish',amount:20,createdAt:2}));
 store.dispatch(addExpense({description:'Gas bill',note:'20L diesel',amount:30,createdAt:7}));
 
-
 const jsx = (
     <Provider store={store}>
         <AppRouter/>
