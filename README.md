@@ -136,3 +136,35 @@ Learn how to build and launch React web applications using React, Redux, Webpack
 - beforeEachMethod in Jest
 
 This section was a little tough. I can really see the value of testing though, especially as an app gets bigger and the state gets more complex. This was a good introduction to testing with Jest. 
+
+## Section 13 - Deploying Apps
+
+### What did I learn? 
+
+- How to setup SSH with Git
+    - To check: ls -a ~/..ssh in gitbash 
+    - ssh-keygen -t rsa -b 4096 -C "email address here"
+    - follow the steps to set it up
+    - eval "$(ssh-agent -s)" to check if agent is running or to launch if not
+    - ssh-add ~/.ssh/id_rsa 
+    - For windows run "clip < ~/.ssh/id_rsa.pub" to copy to the clipboard
+    - Add it on github profile
+    - To check it run "ssh -T git@github.com"
+- Setting up Webpack for production 
+    - setup production vs dev 
+    - dev tool type changes depending on prod or dev
+        - generates a separate source map 'bundle.map.js'
+- Creating separate CSS files (breaking them out from the bundle.js file)
+    - extract text webpack plugin (deprecated)
+- Setting up a production express server
+- Getting set up with Heroku
+    - Install Heroku
+    - Use Heroku create (gives you a url and git url)
+    - Setup server to dynamically use port 
+    - Setup webpack with Heroku 
+    - Heroku-postbuild in package.json
+- dev dependencies vs production 
+
+From here I am going to setup a new repository specifically for the expensify-app for 
+setting up with Heroku. Currently I can't deploy on Heroku because the expensify-app is
+a folder within this Git repository. 
