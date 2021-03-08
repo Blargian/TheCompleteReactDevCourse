@@ -1,4 +1,27 @@
 /indecision-app/node_modules
 /expensify-app/node_modules
 /portfolio-site/node_modules
+/new-features/node_modules
 /expensify-app/public/dist/
+
+# dependencies
+/new-features/node_modules
+/new-features/.pnp
+/new-features/.pnp.js
+
+# testing
+/new-features/coverage
+
+# production
+/new-features/build
+
+# misc
+/new-features/.DS_Store
+/new-features/.env.local
+/new-features/.env.development.local
+/new-features/.env.test.local
+/new-features/.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

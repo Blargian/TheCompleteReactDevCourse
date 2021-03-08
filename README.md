@@ -168,3 +168,19 @@ This section was a little tough. I can really see the value of testing though, e
 From here I am going to setup a new repository specifically for the expensify-app for 
 setting up with Heroku. Currently I can't deploy on Heroku because the expensify-app is
 a folder within this Git repository. 
+
+Find the complete app at: [Expense Tracker App](https://github.com/Blargian/Expensify)
+
+## Section 19 - Hooks, Context, Fragments, and More
+
+### What did I learn? 
+
+- Why hooks were introduced 
+- How to use the useState hook
+    - Use useState multiple times rather than passing one large object
+    - add an array to specify when the useEffect hook runs
+    - add a return statement to callback body to mock the componentDidUnmount lifecycle method
+- The useReducer hook and how to use it 
+-  ContextAPI and useContext hook
+- Using a React fragment 
+- How to create custom hooks
